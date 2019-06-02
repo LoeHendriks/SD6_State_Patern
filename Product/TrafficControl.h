@@ -8,6 +8,7 @@ class TrafficControl
 {
 public:
     TrafficControl();
+    ~TrafficControl();
     void SetState(TrafficState* ts);
     void Handle();
 private:
