@@ -11,6 +11,7 @@ class RedLight : public TrafficState
 {
 public:
     RedLight(TrafficControl* context);
+    ~RedLight();
     void Handle();
 private:
     TrafficControl* context;

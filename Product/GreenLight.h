@@ -11,6 +11,7 @@ class GreenLight : public TrafficState
 {
 public:
     GreenLight(TrafficControl* context);
+    ~GreenLight();
     void Handle();
 private:
     TrafficControl* context;

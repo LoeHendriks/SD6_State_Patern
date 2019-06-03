@@ -3,6 +3,12 @@
 
 GreenLight::GreenLight(TrafficControl* context):context(context){}
 
+GreenLight::~GreenLight()
+{
+    delete context;
+    context = NULL;
+}
+
 void GreenLight::Handle()
 {
     std::cout << "GreenLight" << std::endl;

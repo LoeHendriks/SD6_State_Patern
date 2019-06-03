@@ -11,6 +11,7 @@ class YellowLight : public TrafficState
 {
 public:
     YellowLight(TrafficControl* context);
+    ~YellowLight();
     void Handle();
 private:
     TrafficControl* context;
